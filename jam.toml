@@ -41,7 +41,7 @@ share = 0.28
 [jam]
 # Submission zip name TeamName_GameName (letters, digits, '-'); `jf package --zip` refuses while empty.
 team_name = ""
-game_name = ""
+game_name = "HarrowMark"
 
 [media]
 # itch.io game page, appended to social posts that carry no link (`jf publish`). Credentials never go
