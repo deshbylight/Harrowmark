@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Investigation",
+	"Description": "Case data, contradiction engine, clock and film, photo camera and subjects, talk, inspect and gates (GDD section 12).",
+	"Category": "Jam",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"Modules": [
+		{ "Name": "Investigation", "Type": "Runtime", "LoadingPhase": "Default" }
+	],
+	"Plugins": [
+		{ "Name": "JamCore", "Enabled": true }
+	]
+}

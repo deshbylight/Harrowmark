@@ -15,3 +15,8 @@ Plugins/**/Binaries/
 Plugins/**/Intermediate/
 # Python (forge/scripts)
 __pycache__/
+# Secrets (fal API key)
+.env
+
+# Raw generated source assets (Meshy/Tripo/fal), large binaries; imported copies live in Content/
+art_src/

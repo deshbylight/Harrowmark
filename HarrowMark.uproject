@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.8",
+	"EngineAssociation": "{517DDF8E-4840-AE8F-E640-6FADBD5B3CD4}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -13,6 +13,10 @@
 	"Plugins": [
 		{ "Name": "PythonScriptPlugin", "Enabled": true },
 		{ "Name": "EditorScriptingUtilities", "Enabled": true },
-		{ "Name": "EnhancedInput", "Enabled": true }
+		{ "Name": "EnhancedInput", "Enabled": true },
+		{ "Name": "ModelingToolsEditorMode", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "GameplayStateTree", "Enabled": true },
+		{ "Name": "DLSS", "Enabled": true },
+		{ "Name": "NRD", "Enabled": true }
 	]
 }

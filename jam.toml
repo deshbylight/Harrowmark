@@ -5,6 +5,10 @@
 name = "HarrowMark"
 uproject = "HarrowMark.uproject"
 
+[unreal]
+# NvRTX 5.8 source build (RTXDI, DLSS RR): docs/HANDOFF.md item 1
+engine_root = 'D:\UnrealEngine\NvRTX_5.8'
+
 [agents]
 max_agents = 24
 max_build_worktrees = 6

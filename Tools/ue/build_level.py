@@ -58,6 +58,8 @@ def convert(current, value):
             return rot(value)
         if isinstance(current, unreal.Vector):
             return vec(value)
+    if isinstance(value, str) and isinstance(current, unreal.EnumBase):
+        return getattr(type(current), value.upper())
     if isinstance(value, str) and value.startswith("/") and not isinstance(current, str):
         obj = unreal.load_object(None, value)
         if obj is None:

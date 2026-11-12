@@ -1,0 +1,6092 @@
+{
+ "map": "/Game/Maps/L_Pier5",
+ "partitioned": false,
+ "environment": {
+  "sun": {
+   "rot": [
+    -20,
+    -150,
+    0
+   ],
+   "intensity": 0.08,
+   "color": [
+    0.55,
+    0.65,
+    1.0
+   ]
+  },
+  "sky": true,
+  "fog": {
+   "density": 0.04
+  }
+ },
+ "actors": [
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Water",
+   "folder": "Greybox/Ground",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark"
+   ],
+   "loc": [
+    0,
+    -25000,
+    -305.0
+   ],
+   "scale": [
+    400,
+    900,
+    0.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Seabed",
+   "folder": "Greybox/Ground",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark"
+   ],
+   "loc": [
+    0,
+    -25000,
+    -810.0
+   ],
+   "scale": [
+    400,
+    900,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Land_Quay",
+   "folder": "Greybox/Ground",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0,
+    3000,
+    -400.0
+   ],
+   "scale": [
+    100,
+    60,
+    8.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Fence_W",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -2500,
+    3000.0,
+    120.0
+   ],
+   "scale": [
+    50,
+    0.2,
+    2.4
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Fence_E",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1675.0,
+    3000.0,
+    120.0
+   ],
+   "scale": [
+    21.5,
+    0.2,
+    2.4
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Fence_E2",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    3925.0,
+    3000.0,
+    120.0
+   ],
+   "scale": [
+    21.5,
+    0.2,
+    2.4
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Wicket_Lintel",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    2800.0,
+    3000.0,
+    220.0
+   ],
+   "scale": [
+    1.0,
+    0.2,
+    0.4
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBarrier",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    300.0,
+    3000.0,
+    100.0
+   ],
+   "scale": [
+    5.4,
+    0.1,
+    0.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "GateBarrierPost",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    15.0,
+    3000,
+    55.00000000000001
+   ],
+   "scale": [
+    0.3,
+    0.3,
+    1.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "PoliceCar",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    4225.0,
+    3900,
+    75.0
+   ],
+   "scale": [
+    4.5,
+    2,
+    1.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Pier_Deck",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0,
+    -3000,
+    -15.0
+   ],
+   "scale": [
+    12,
+    60,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -1000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -1000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -1000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -1000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -1400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -1400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -1400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -1400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -1800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -1800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -1800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -1800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -2200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -2200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -2200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -2200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -2600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -2600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -2600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -2600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -3000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -3000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -3000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -3000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -3400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -3400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -3400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -3400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -3800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -3800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -3800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -3800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -4200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -4200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -4200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -4200,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -4600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -4600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -4600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -4600,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -5000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -5000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -5000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -5000,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -5400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -5400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -5400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -5400,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -580.0,
+    -5800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -200.0,
+    -5800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    200.0,
+    -5800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Piling",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    580.0,
+    -5800,
+    -415.00000000000006
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    7.7
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -570.0,
+    -600,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -570.0,
+    -1400,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -570.0,
+    -2200,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    570.0,
+    -2200,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -570.0,
+    -3000,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    570.0,
+    -3000,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -570.0,
+    -3800,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    570.0,
+    -3800,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -570.0,
+    -4600,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    570.0,
+    -4600,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -570.0,
+    -5400,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bollard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    570.0,
+    -5400,
+    30.0
+   ],
+   "scale": [
+    0.35,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneRail",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -300.0,
+    -3000,
+    2.5
+   ],
+   "scale": [
+    0.1,
+    60,
+    0.05
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneRail",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    300.0,
+    -3000,
+    2.5
+   ],
+   "scale": [
+    0.1,
+    60,
+    0.05
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "FishCrates_A",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -100.0,
+    -3450,
+    80.0
+   ],
+   "scale": [
+    3.0,
+    3,
+    1.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "FishCrates_B",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    125.0,
+    -3475.0,
+    40.0
+   ],
+   "scale": [
+    1.5,
+    1.5,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Nets",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -350.0,
+    -3100,
+    30.0
+   ],
+   "scale": [
+    2.0,
+    2,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "EdgeLamp_Post",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -540.0,
+    -5940.0,
+    120.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    2.4
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "EdgeLamp_Head",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -540.0,
+    -5940.0,
+    240.0
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Curb_W",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -592.5,
+    -3000,
+    7.5
+   ],
+   "scale": [
+    0.15,
+    60,
+    0.15
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Curb_E",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    592.5,
+    -3000,
+    7.5
+   ],
+   "scale": [
+    0.15,
+    60,
+    0.15
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Curb_N",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0,
+    -5992.5,
+    7.5
+   ],
+   "scale": [
+    12,
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Ladder_Landing",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -620.0,
+    -5390.0,
+    -75.0
+   ],
+   "scale": [
+    0.4,
+    0.8,
+    3.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "LowerLanding",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -855.0,
+    -5300,
+    -230.0
+   ],
+   "scale": [
+    4.9,
+    6,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Catwalk_LandingStep",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -585.0,
+    -5150,
+    -215.0
+   ],
+   "scale": [
+    0.5,
+    1,
+    0.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Catwalk",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -510.0,
+    -3800,
+    -205.0
+   ],
+   "scale": [
+    1.0,
+    28,
+    0.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CatwalkStringer",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -510.0,
+    -2600.0,
+    -225.0
+   ],
+   "scale": [
+    1.0,
+    0.2,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CatwalkStringer",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -510.0,
+    -3000.0,
+    -225.0
+   ],
+   "scale": [
+    1.0,
+    0.2,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CatwalkStringer",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -510.0,
+    -3400.0,
+    -225.0
+   ],
+   "scale": [
+    1.0,
+    0.2,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CatwalkStringer",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -510.0,
+    -3800.0,
+    -225.0
+   ],
+   "scale": [
+    1.0,
+    0.2,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CatwalkStringer",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -510.0,
+    -4200.0,
+    -225.0
+   ],
+   "scale": [
+    1.0,
+    0.2,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CatwalkStringer",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -510.0,
+    -4600.0,
+    -225.0
+   ],
+   "scale": [
+    1.0,
+    0.2,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CatwalkStringer",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -510.0,
+    -5000.0,
+    -225.0
+   ],
+   "scale": [
+    1.0,
+    0.2,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Boathook",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -300.0,
+    -4790.0,
+    -125.0
+   ],
+   "scale": [
+    2.4,
+    0.2,
+    0.1
+   ],
+   "rot": [
+    0,
+    -20.0,
+    -35.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Pontoon",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1010.0,
+    -1625.0,
+    -230.0
+   ],
+   "scale": [
+    7.8,
+    16.5,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CatwalkStep",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -590.0,
+    -2420.0,
+    -215.0
+   ],
+   "scale": [
+    0.6,
+    0.8,
+    0.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Ramp_Berth",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -800.0,
+    -400.0,
+    -120.00000000000001
+   ],
+   "rot": [
+    0,
+    0.0,
+    -15.38
+   ],
+   "scale": [
+    2.0,
+    8.297,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Ramp_Wall_W",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -905.0,
+    -400,
+    -65.0
+   ],
+   "scale": [
+    0.1,
+    8,
+    3.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "CL2_MooringPost",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -660.0,
+    -1800,
+    -170.00000000000003
+   ],
+   "scale": [
+    0.3,
+    0.3,
+    1.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CL2_Launch",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1200.0,
+    -1450,
+    -230.0
+   ],
+   "scale": [
+    3.0,
+    9,
+    1.4
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "CL2_Mast",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -1200,
+    -1500,
+    95.0
+   ],
+   "scale": [
+    0.12,
+    0.12,
+    5.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "NoAdmittanceBoard",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -685.0,
+    -2455.0,
+    -160.0
+   ],
+   "scale": [
+    1.1,
+    0.1,
+    1.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneLeg",
+   "folder": "Greybox/Crane",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -300.0,
+    -1850.0,
+    550.0
+   ],
+   "scale": [
+    0.6,
+    0.6,
+    11.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneLeg",
+   "folder": "Greybox/Crane",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -300.0,
+    -2150.0,
+    550.0
+   ],
+   "scale": [
+    0.6,
+    0.6,
+    11.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneLeg",
+   "folder": "Greybox/Crane",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    300.0,
+    -1850.0,
+    550.0
+   ],
+   "scale": [
+    0.6,
+    0.6,
+    11.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneLeg",
+   "folder": "Greybox/Crane",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    300.0,
+    -2150.0,
+    550.0
+   ],
+   "scale": [
+    0.6,
+    0.6,
+    11.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CranePortal",
+   "folder": "Greybox/Crane",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0.0,
+    -2000.0,
+    1140.0
+   ],
+   "scale": [
+    6.6,
+    3.6,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_Floor",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0.0,
+    -2000.0,
+    1190.0
+   ],
+   "scale": [
+    2.4,
+    2.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_Ceiling",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0.0,
+    -2000.0,
+    1430.0
+   ],
+   "scale": [
+    2.4,
+    2.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallS",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -100.0,
+    -1890.0,
+    1310.0
+   ],
+   "scale": [
+    0.4,
+    0.2,
+    2.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallS",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0.0,
+    -1890.0,
+    1245.0
+   ],
+   "scale": [
+    1.6,
+    0.2,
+    0.9
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallS",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0.0,
+    -1890.0,
+    1410.0
+   ],
+   "scale": [
+    1.6,
+    0.2,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallS",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    100.0,
+    -1890.0,
+    1310.0
+   ],
+   "scale": [
+    0.4,
+    0.2,
+    2.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallN",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -100.0,
+    -2110.0,
+    1310.0
+   ],
+   "scale": [
+    0.4,
+    0.2,
+    2.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallN",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0.0,
+    -2110.0,
+    1245.0
+   ],
+   "scale": [
+    1.6,
+    0.2,
+    0.9
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallN",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    0.0,
+    -2110.0,
+    1410.0
+   ],
+   "scale": [
+    1.6,
+    0.2,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallN",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    100.0,
+    -2110.0,
+    1310.0
+   ],
+   "scale": [
+    0.4,
+    0.2,
+    2.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallW",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -110.0,
+    -1910.0,
+    1310.0
+   ],
+   "scale": [
+    0.2,
+    0.2,
+    2.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallW",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -110.0,
+    -2000.0,
+    1245.0
+   ],
+   "scale": [
+    0.2,
+    1.6,
+    0.9
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallW",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -110.0,
+    -2000.0,
+    1410.0
+   ],
+   "scale": [
+    0.2,
+    1.6,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallW",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -110.0,
+    -2090.0,
+    1310.0
+   ],
+   "scale": [
+    0.2,
+    0.2,
+    2.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallE",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    110.0,
+    -1910.0,
+    1310.0
+   ],
+   "scale": [
+    0.2,
+    0.2,
+    2.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallE",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    110.0,
+    -2000.0,
+    1245.0
+   ],
+   "scale": [
+    0.2,
+    1.6,
+    0.9
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallE",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    110.0,
+    -2000.0,
+    1410.0
+   ],
+   "scale": [
+    0.2,
+    1.6,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_WallE",
+   "folder": "Interiors/CraneCab",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    110.0,
+    -2090.0,
+    1310.0
+   ],
+   "scale": [
+    0.2,
+    0.2,
+    2.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneJib",
+   "folder": "Greybox/Crane",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1010.0,
+    -2000.0,
+    1390.0
+   ],
+   "scale": [
+    17.8,
+    0.8,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneLadder",
+   "folder": "Greybox/Crane",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    340.0,
+    -2190.0,
+    550.0
+   ],
+   "scale": [
+    0.2,
+    0.6,
+    11.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneAwning",
+   "folder": "Greybox/Crane",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    470.0,
+    -1800.0,
+    245.0
+   ],
+   "scale": [
+    2.6,
+    2.0,
+    0.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Agatha_Hull",
+   "folder": "Greybox/Agatha",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    1100,
+    -3400,
+    -100.0
+   ],
+   "scale": [
+    8,
+    60,
+    10.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Agatha_Bow",
+   "folder": "Greybox/Agatha",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    1100,
+    -6600,
+    30.0
+   ],
+   "scale": [
+    6,
+    4,
+    8.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Agatha_Rail_W",
+   "folder": "Greybox/Agatha",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    705.0,
+    -3950,
+    450.0
+   ],
+   "scale": [
+    0.1,
+    49,
+    1.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Agatha_Gangway",
+   "folder": "Greybox/Agatha",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    540.0,
+    -992.5000000000001,
+    190.0
+   ],
+   "rot": [
+    0,
+    0.0,
+    26.14
+   ],
+   "scale": [
+    1.0,
+    9.079,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Agatha_GangwayHead",
+   "folder": "Greybox/Agatha",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    595.0,
+    -1450.0,
+    390.0
+   ],
+   "scale": [
+    2.1,
+    1.0,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "WatchStand",
+   "folder": "Greybox/Agatha",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    785.0,
+    -1545.0,
+    460.0
+   ],
+   "scale": [
+    0.5,
+    0.5,
+    1.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "WatchStand_Hood",
+   "folder": "Greybox/Agatha",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    785.0,
+    -1545.0,
+    565.0
+   ],
+   "scale": [
+    0.7,
+    0.7,
+    0.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Hatch2_Coaming",
+   "folder": "Greybox/Agatha",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1100,
+    -2000,
+    440.0
+   ],
+   "scale": [
+    4,
+    6,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_Floor",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1100.0,
+    -800.0,
+    390.0
+   ],
+   "scale": [
+    5.4,
+    4.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_Ceiling",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1100.0,
+    -800.0,
+    670.0
+   ],
+   "scale": [
+    5.4,
+    4.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_WallS",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1100.0,
+    -590.0,
+    530.0
+   ],
+   "scale": [
+    5.4,
+    0.2,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_WallN",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    865.0,
+    -1010.0,
+    530.0
+   ],
+   "scale": [
+    0.7,
+    0.2,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_WallN",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    960.0,
+    -1010.0,
+    640.0
+   ],
+   "scale": [
+    1.2,
+    0.2,
+    0.4
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_WallN",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1195.0,
+    -1010.0,
+    530.0
+   ],
+   "scale": [
+    3.5,
+    0.2,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_WallW",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    840.0,
+    -675.0,
+    530.0
+   ],
+   "scale": [
+    0.2,
+    1.5,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_WallW",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    840.0,
+    -800.0,
+    450.0
+   ],
+   "scale": [
+    0.2,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_WallW",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    840.0,
+    -800.0,
+    620.0
+   ],
+   "scale": [
+    0.2,
+    1.0,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_WallW",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    840.0,
+    -925.0,
+    530.0
+   ],
+   "scale": [
+    0.2,
+    1.5,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CaptainCabin_WallE",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1360.0,
+    -800.0,
+    530.0
+   ],
+   "scale": [
+    0.2,
+    4.0,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Funnel",
+   "folder": "Greybox/Agatha",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1100,
+    -800,
+    890.0
+   ],
+   "scale": [
+    2,
+    2,
+    4.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_Floor",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1860.0,
+    2550.0,
+    -10.0
+   ],
+   "scale": [
+    7.2,
+    5.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_Ceiling",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1860.0,
+    2550.0,
+    310.0
+   ],
+   "scale": [
+    7.2,
+    5.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_WallS",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -2075.0,
+    2810.0,
+    150.0
+   ],
+   "scale": [
+    2.9,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_WallS",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1850.0,
+    2810.0,
+    50.0
+   ],
+   "scale": [
+    1.6,
+    0.2,
+    1.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_WallS",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1850.0,
+    2810.0,
+    260.0
+   ],
+   "scale": [
+    1.6,
+    0.2,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_WallS",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1635.0,
+    2810.0,
+    150.0
+   ],
+   "scale": [
+    2.7,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_WallN",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1860.0,
+    2290.0,
+    150.0
+   ],
+   "scale": [
+    7.2,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_WallW",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -2210.0,
+    2550,
+    150.0
+   ],
+   "scale": [
+    0.2,
+    5,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_WallE",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1510.0,
+    2760.0,
+    150.0
+   ],
+   "scale": [
+    0.2,
+    0.8,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_WallE",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1510.0,
+    2660.0,
+    260.0
+   ],
+   "scale": [
+    0.2,
+    1.2,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CustomsOffice_WallE",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1510.0,
+    2450.0,
+    150.0
+   ],
+   "scale": [
+    0.2,
+    3.0,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "PortOffice_West",
+   "folder": "Greybox/PortOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -3110.0,
+    2210.0,
+    350.0
+   ],
+   "scale": [
+    17.8,
+    12.2,
+    7.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "PortOffice_North",
+   "folder": "Greybox/PortOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -1860.0,
+    1940.0,
+    350.0
+   ],
+   "scale": [
+    7.2,
+    6.8,
+    7.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "PortOffice_Upper",
+   "folder": "Greybox/PortOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -1860.0,
+    2550.0,
+    510.0
+   ],
+   "scale": [
+    7.2,
+    5.4,
+    3.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_Floor",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -500.0,
+    2800.0,
+    -10.0
+   ],
+   "scale": [
+    2.9,
+    2.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_Ceiling",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -500.0,
+    2800.0,
+    270.0
+   ],
+   "scale": [
+    2.9,
+    2.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallS",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -500.0,
+    2910.0,
+    130.0
+   ],
+   "scale": [
+    2.9,
+    0.2,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallN",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -607.5,
+    2690.0,
+    130.0
+   ],
+   "scale": [
+    0.75,
+    0.2,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallN",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -500.0,
+    2690.0,
+    50.0
+   ],
+   "scale": [
+    1.4,
+    0.2,
+    1.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallN",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -500.0,
+    2690.0,
+    230.0
+   ],
+   "scale": [
+    1.4,
+    0.2,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallN",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -392.5,
+    2690.0,
+    130.0
+   ],
+   "scale": [
+    0.75,
+    0.2,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallW",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -635.0,
+    2875.0,
+    130.0
+   ],
+   "scale": [
+    0.2,
+    0.5,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallW",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -635.0,
+    2800.0,
+    50.0
+   ],
+   "scale": [
+    0.2,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallW",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -635.0,
+    2800.0,
+    230.0
+   ],
+   "scale": [
+    0.2,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallW",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -635.0,
+    2725.0,
+    130.0
+   ],
+   "scale": [
+    0.2,
+    0.5,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallE",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -365.0,
+    2870.0,
+    130.0
+   ],
+   "scale": [
+    0.2,
+    0.6,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallE",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -365.0,
+    2800.0,
+    50.0
+   ],
+   "scale": [
+    0.2,
+    0.8,
+    1.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallE",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -365.0,
+    2800.0,
+    220.0
+   ],
+   "scale": [
+    0.2,
+    0.8,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "GateBooth_WallE",
+   "folder": "Interiors/GateBooth",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -365.0,
+    2730.0,
+    130.0
+   ],
+   "scale": [
+    0.2,
+    0.6,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Warehouse5",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    3000,
+    2250,
+    450.0
+   ],
+   "scale": [
+    30,
+    13,
+    9.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Warehouse5_Dock",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    3000,
+    1450,
+    60.0
+   ],
+   "scale": [
+    16,
+    3,
+    1.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Warehouse5_Canopy",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    3000,
+    1425.0,
+    460.0
+   ],
+   "scale": [
+    16,
+    3.5,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "OilDrums",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1100,
+    500,
+    45.0
+   ],
+   "scale": [
+    2,
+    2,
+    0.9
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Pallets",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1050,
+    700,
+    25.0
+   ],
+   "scale": [
+    3,
+    2,
+    0.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CoronerVan",
+   "folder": "Night1",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1050,
+    2600,
+    110.0
+   ],
+   "scale": [
+    5,
+    2,
+    2.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_Floor",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1200.0,
+    4850.0,
+    -10.0
+   ],
+   "scale": [
+    12.4,
+    9.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_Ceiling",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1200.0,
+    4850.0,
+    360.0
+   ],
+   "scale": [
+    12.4,
+    9.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallS",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1200.0,
+    5310.0,
+    175.0
+   ],
+   "scale": [
+    12.4,
+    0.2,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallN",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    620.0,
+    4390.0,
+    175.0
+   ],
+   "scale": [
+    0.8,
+    0.2,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallN",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    720.0,
+    4390.0,
+    285.0
+   ],
+   "scale": [
+    1.2,
+    0.2,
+    1.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallN",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    915.0,
+    4390.0,
+    175.0
+   ],
+   "scale": [
+    2.7,
+    0.2,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallN",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1150.0,
+    4390.0,
+    45.0
+   ],
+   "scale": [
+    2.0,
+    0.2,
+    0.9
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallN",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1150.0,
+    4390.0,
+    295.0
+   ],
+   "scale": [
+    2.0,
+    0.2,
+    1.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallN",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1350.0,
+    4390.0,
+    175.0
+   ],
+   "scale": [
+    2.0,
+    0.2,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallN",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1550.0,
+    4390.0,
+    45.0
+   ],
+   "scale": [
+    2.0,
+    0.2,
+    0.9
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallN",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1550.0,
+    4390.0,
+    295.0
+   ],
+   "scale": [
+    2.0,
+    0.2,
+    1.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallN",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1735.0,
+    4390.0,
+    175.0
+   ],
+   "scale": [
+    1.7,
+    0.2,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallW",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    590.0,
+    4850,
+    175.0
+   ],
+   "scale": [
+    0.2,
+    9,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallE",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1810.0,
+    5280.0,
+    175.0
+   ],
+   "scale": [
+    0.2,
+    0.4,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallE",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1810.0,
+    5200.0,
+    285.0
+   ],
+   "scale": [
+    0.2,
+    1.2,
+    1.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_WallE",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1810.0,
+    4770.0,
+    175.0
+   ],
+   "scale": [
+    0.2,
+    7.4,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_Counter",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1600.0,
+    4875.0,
+    55.0
+   ],
+   "scale": [
+    0.8,
+    6.5,
+    1.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_BackBar_Mirror",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1770.0,
+    4825.0,
+    180.0
+   ],
+   "scale": [
+    0.2,
+    3.5,
+    1.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Bar_Register",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1600.0,
+    4575.0,
+    125.0
+   ],
+   "scale": [
+    0.6,
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bar_Table0",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    850.0,
+    4700,
+    37.5
+   ],
+   "scale": [
+    0.9,
+    0.9,
+    0.75
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bar_Table1",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    1150.0,
+    4700,
+    37.5
+   ],
+   "scale": [
+    0.9,
+    0.9,
+    0.75
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bar_Table2",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    850.0,
+    5050.0,
+    37.5
+   ],
+   "scale": [
+    0.9,
+    0.9,
+    0.75
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Bar_Table3",
+   "folder": "Interiors/Bar",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    1150.0,
+    5050.0,
+    37.5
+   ],
+   "scale": [
+    0.9,
+    0.9,
+    0.75
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Lighthouse_Shell_W",
+   "folder": "Greybox/Lighthouse",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    540.0,
+    4940.0,
+    360.0
+   ],
+   "scale": [
+    0.8,
+    11.2,
+    7.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Lighthouse_Shell_S",
+   "folder": "Greybox/Lighthouse",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    1505.0,
+    5410.0,
+    360.0
+   ],
+   "scale": [
+    20.1,
+    1.8,
+    7.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Lighthouse_Upper",
+   "folder": "Greybox/Lighthouse",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    1200.0,
+    4850.0,
+    545.0
+   ],
+   "scale": [
+    12.4,
+    9.4,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Lighthouse_Roof",
+   "folder": "Greybox/Lighthouse",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    1160.0,
+    4940.0,
+    735.0
+   ],
+   "scale": [
+    13.2,
+    11.2,
+    0.3
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Neon_Sign",
+   "folder": "Greybox/Lighthouse",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1300,
+    4367.5,
+    420.0
+   ],
+   "scale": [
+    8,
+    0.15,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Yard_WallN",
+   "folder": "Greybox/LighthouseYard",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1990.0,
+    4390.0,
+    130.0
+   ],
+   "scale": [
+    3.4,
+    0.2,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Yard_WallN",
+   "folder": "Greybox/LighthouseYard",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    2475.0,
+    4390.0,
+    130.0
+   ],
+   "scale": [
+    0.7,
+    0.2,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Yard_WallE",
+   "folder": "Greybox/LighthouseYard",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    2500.0,
+    4850.0,
+    130.0
+   ],
+   "scale": [
+    0.2,
+    9.4,
+    2.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Yard_Empties",
+   "folder": "Greybox/LighthouseYard",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1900.0,
+    5285.0,
+    45.0
+   ],
+   "scale": [
+    1.2,
+    0.5,
+    0.9
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Yard_Bins",
+   "folder": "Greybox/LighthouseYard",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    2430.0,
+    5250.0,
+    55.0
+   ],
+   "scale": [
+    1.0,
+    1.2,
+    1.1
+   ]
+  },
+  {
+   "class": "/Script/HarrowMark.CaseDriveActor",
+   "label": "DetectiveCar",
+   "folder": "Case/Drive",
+   "loc": [
+    -60.0,
+    4270.0,
+    72.5
+   ],
+   "rot": [
+    0,
+    0.0,
+    0.0
+   ],
+   "props": {
+    "mesh_size": [
+     480,
+     180,
+     145
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PlayerStart",
+   "label": "PlayerStart_Car",
+   "folder": "Markers",
+   "loc": [
+    -60.0,
+    4060.0,
+    100.0
+   ],
+   "rot": [
+    0,
+    -60.0,
+    0.0
+   ],
+   "props": {
+    "player_start_tag": "Car"
+   }
+  },
+  {
+   "class": "/Script/Engine.PlayerStart",
+   "label": "PlayerStart_Start",
+   "folder": "Markers",
+   "loc": [
+    150.0,
+    -5250.0,
+    100.0
+   ],
+   "rot": [
+    0,
+    -120.0,
+    0.0
+   ],
+   "props": {
+    "player_start_tag": "Start"
+   }
+  },
+  {
+   "class": "/Script/Engine.SpotLight",
+   "label": "CraneFlood_Deck",
+   "folder": "Lights",
+   "loc": [
+    50.0,
+    -2100.0,
+    1150.0
+   ],
+   "props": {
+    "spot_light_component.intensity": 400,
+    "spot_light_component.attenuation_radius": 6000,
+    "spot_light_component.light_color": [
+     170,
+     200,
+     255,
+     255
+    ],
+    "spot_light_component.outer_cone_angle": 21.0,
+    "spot_light_component.inner_cone_angle": 14.0
+   },
+   "rot": [
+    -40,
+    -90.0,
+    0.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.SpotLight",
+   "label": "CraneFlood_Berth",
+   "folder": "Lights",
+   "loc": [
+    -250.0,
+    -1900.0,
+    1150.0
+   ],
+   "props": {
+    "spot_light_component.intensity": 2500,
+    "spot_light_component.attenuation_radius": 3000,
+    "spot_light_component.light_color": [
+     170,
+     200,
+     255,
+     255
+    ],
+    "spot_light_component.outer_cone_angle": 25.0,
+    "spot_light_component.inner_cone_angle": 15.0
+   },
+   "rot": [
+    -60,
+    -202.0,
+    0.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "PierLamp_Post0",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -540.0,
+    -800,
+    200.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    4.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "PierLamp0",
+   "folder": "Lights",
+   "loc": [
+    -540.0,
+    -800,
+    390.0
+   ],
+   "props": {
+    "point_light_component.intensity": 25,
+    "point_light_component.attenuation_radius": 1200,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "PierLamp_Post1",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    540.0,
+    -2000,
+    200.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    4.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "PierLamp1",
+   "folder": "Lights",
+   "loc": [
+    540.0,
+    -2000,
+    390.0
+   ],
+   "props": {
+    "point_light_component.intensity": 25,
+    "point_light_component.attenuation_radius": 1200,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "PierLamp_Post2",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -540.0,
+    -3300,
+    200.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    4.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "PierLamp2",
+   "folder": "Lights",
+   "loc": [
+    -540.0,
+    -3300,
+    390.0
+   ],
+   "props": {
+    "point_light_component.intensity": 25,
+    "point_light_component.attenuation_radius": 1200,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "PierLamp_Post3",
+   "folder": "Greybox/Pier5",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    540.0,
+    -4600,
+    200.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    4.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "PierLamp3",
+   "folder": "Lights",
+   "loc": [
+    540.0,
+    -4600,
+    390.0
+   ],
+   "props": {
+    "point_light_component.intensity": 25,
+    "point_light_component.attenuation_radius": 1200,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "QuayLamp_Post0",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -4200,
+    200.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "QuayLamp0",
+   "folder": "Lights",
+   "loc": [
+    -4200,
+    200.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "QuayLamp_Post1",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -2800,
+    200.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "QuayLamp1",
+   "folder": "Lights",
+   "loc": [
+    -2800,
+    200.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "QuayLamp_Post2",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -1400,
+    200.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "QuayLamp2",
+   "folder": "Lights",
+   "loc": [
+    -1400,
+    200.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "QuayLamp_Post3",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    1400,
+    200.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "QuayLamp3",
+   "folder": "Lights",
+   "loc": [
+    1400,
+    200.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "QuayLamp_Post4",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    2800,
+    200.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "QuayLamp4",
+   "folder": "Lights",
+   "loc": [
+    2800,
+    200.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "QuayLamp_Post5",
+   "folder": "Greybox/Quay",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    4200,
+    200.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "QuayLamp5",
+   "folder": "Lights",
+   "loc": [
+    4200,
+    200.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "StreetLamp_Post0",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -3500,
+    3100.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "StreetLamp0",
+   "folder": "Lights",
+   "loc": [
+    -3500,
+    3100.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "StreetLamp_Post1",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -2100,
+    3100.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "StreetLamp1",
+   "folder": "Lights",
+   "loc": [
+    -2100,
+    3100.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "StreetLamp_Post2",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -700,
+    3100.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "StreetLamp2",
+   "folder": "Lights",
+   "loc": [
+    -700,
+    3100.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "StreetLamp_Post3",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    3600,
+    3100.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "StreetLamp3",
+   "folder": "Lights",
+   "loc": [
+    3600,
+    3100.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "StreetLamp_Post4",
+   "folder": "Greybox/Street",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    4600,
+    3100.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "StreetLamp4",
+   "folder": "Lights",
+   "loc": [
+    4600,
+    3100.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Neon_Lighthouse",
+   "folder": "Lights",
+   "loc": [
+    1300,
+    4340.0,
+    420.0
+   ],
+   "props": {
+    "point_light_component.intensity": 20,
+    "point_light_component.attenuation_radius": 1400,
+    "point_light_component.light_color": [
+     60,
+     230,
+     255,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Agatha_WorkLight",
+   "folder": "Lights",
+   "loc": [
+    950.0,
+    -2000.0,
+    750.0
+   ],
+   "props": {
+    "point_light_component.intensity": 40,
+    "point_light_component.attenuation_radius": 1600,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Agatha_DeckWorkLight_Spill",
+   "folder": "Lights",
+   "loc": [
+    800.0,
+    -1200.0,
+    600.0
+   ],
+   "props": {
+    "point_light_component.intensity": 15,
+    "point_light_component.attenuation_radius": 1000,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Booth_Bulb",
+   "folder": "Lights",
+   "loc": [
+    -500.0,
+    2800.0,
+    229.99999999999997
+   ],
+   "props": {
+    "point_light_component.intensity": 8,
+    "point_light_component.attenuation_radius": 500,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "CustomsOffice_DeskLamp",
+   "folder": "Lights",
+   "loc": [
+    -1850.0,
+    2550.0,
+    200.0
+   ],
+   "props": {
+    "point_light_component.intensity": 10,
+    "point_light_component.attenuation_radius": 600,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "CraneCab_Bulb",
+   "folder": "Lights",
+   "loc": [
+    0,
+    -2000,
+    1400.0
+   ],
+   "props": {
+    "point_light_component.intensity": 5,
+    "point_light_component.attenuation_radius": 400,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "WatchStand_Bulb",
+   "folder": "Lights",
+   "loc": [
+    785.0,
+    -1545.0,
+    550.0
+   ],
+   "props": {
+    "point_light_component.intensity": 6,
+    "point_light_component.attenuation_radius": 500,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Yard_Bulb",
+   "folder": "Lights",
+   "loc": [
+    1870.0,
+    5200.0,
+    260.0
+   ],
+   "props": {
+    "point_light_component.intensity": 6,
+    "point_light_component.attenuation_radius": 600,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Nora_Window",
+   "folder": "Lights",
+   "loc": [
+    1200.0,
+    4340.0,
+    540.0
+   ],
+   "props": {
+    "point_light_component.intensity": 3,
+    "point_light_component.attenuation_radius": 400,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Bar_Practical0",
+   "folder": "Lights",
+   "loc": [
+    900,
+    4800,
+    300.0
+   ],
+   "props": {
+    "point_light_component.intensity": 10,
+    "point_light_component.attenuation_radius": 600,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Bar_Practical1",
+   "folder": "Lights",
+   "loc": [
+    1300,
+    4800,
+    300.0
+   ],
+   "props": {
+    "point_light_component.intensity": 10,
+    "point_light_component.attenuation_radius": 600,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Bar_Practical2",
+   "folder": "Lights",
+   "loc": [
+    900,
+    5100,
+    300.0
+   ],
+   "props": {
+    "point_light_component.intensity": 10,
+    "point_light_component.attenuation_radius": 600,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Bar_Practical3",
+   "folder": "Lights",
+   "loc": [
+    1300,
+    5100,
+    300.0
+   ],
+   "props": {
+    "point_light_component.intensity": 10,
+    "point_light_component.attenuation_radius": 600,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "DoorLight0",
+   "folder": "Lights",
+   "loc": [
+    720.0,
+    4360.0,
+    260.0
+   ],
+   "props": {
+    "point_light_component.intensity": 6,
+    "point_light_component.attenuation_radius": 400,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "DoorLight1",
+   "folder": "Lights",
+   "loc": [
+    -1480.0,
+    2660.0,
+    260.0
+   ],
+   "props": {
+    "point_light_component.intensity": 6,
+    "point_light_component.attenuation_radius": 400,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "DoorLight2",
+   "folder": "Lights",
+   "loc": [
+    960.0,
+    -1040.0,
+    640.0
+   ],
+   "props": {
+    "point_light_component.intensity": 6,
+    "point_light_component.attenuation_radius": 400,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Lantern_Rope",
+   "folder": "Night1",
+   "loc": [
+    -150.0,
+    -5550.0,
+    100.0
+   ],
+   "props": {
+    "point_light_component.intensity": 4,
+    "point_light_component.attenuation_radius": 500,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "Breakwater_Lighthouse",
+   "folder": "Greybox/Ground",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -6000,
+    -60000,
+    1100.0
+   ],
+   "scale": [
+    4.0,
+    4.0,
+    28.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Breakwater_Beam",
+   "folder": "Lights",
+   "loc": [
+    -6000,
+    -60000,
+    2400
+   ],
+   "props": {
+    "point_light_component.intensity": 2000,
+    "point_light_component.attenuation_radius": 12000,
+    "point_light_component.light_color": [
+     170,
+     200,
+     255,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Notebook_Crate",
+   "folder": "Night1",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -360.0,
+    -5600.0,
+    29.0
+   ],
+   "scale": [
+    0.5,
+    0.5,
+    0.58
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "CraneCab_Shelf",
+   "folder": "Greybox/Crane",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    60.0,
+    -2060.0,
+    1249.0
+   ],
+   "scale": [
+    0.6,
+    0.5,
+    0.98
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Cabin_Desk",
+   "folder": "Interiors/CaptainCabin",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    1000.0,
+    -900.0,
+    437.5
+   ],
+   "scale": [
+    1.2,
+    1.0,
+    0.75
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Customs_Desk",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -1850.0,
+    2600.0,
+    37.5
+   ],
+   "scale": [
+    1.6,
+    1.0,
+    0.75
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Customs_LockerBody",
+   "folder": "Interiors/CustomsOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -2172.5,
+    2400.0,
+    95.0
+   ],
+   "scale": [
+    0.55,
+    0.6,
+    1.9
+   ]
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Wound",
+   "folder": "Case/Subjects",
+   "loc": [
+    -250.0,
+    -5750.0,
+    13.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Wound"
+   ],
+   "props": {
+    "mesh_size": [
+     170,
+     50,
+     25
+    ],
+    "subject.shot_id": "SH_Wound",
+    "subject.box_extent": [
+     30,
+     25,
+     15
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Watch",
+   "folder": "Case/Subjects",
+   "loc": [
+    -190.0,
+    -5700.0,
+    2.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Watch"
+   ],
+   "props": {
+    "mesh_size": [
+     5,
+     5,
+     2
+    ],
+    "subject.shot_id": "SH_Watch",
+    "subject.box_extent": [
+     14,
+     14,
+     6
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Notebook",
+   "folder": "Case/Subjects",
+   "loc": [
+    -360.0,
+    -5600.0,
+    59.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Notebook"
+   ],
+   "props": {
+    "mesh_size": [
+     15,
+     21,
+     2
+    ],
+    "subject.shot_id": "SH_Notebook",
+    "subject.box_extent": [
+     18,
+     22,
+     6
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Lamp",
+   "folder": "Case/Subjects",
+   "loc": [
+    -540.0,
+    -5940.0,
+    240.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Lamp"
+   ],
+   "props": {
+    "mesh_size": [
+     0,
+     0,
+     0
+    ],
+    "subject.shot_id": "SH_Lamp",
+    "subject.box_extent": [
+     25,
+     25,
+     20
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Gouge",
+   "folder": "Case/Subjects",
+   "loc": [
+    -531.0,
+    -5940.0,
+    210.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Gouge"
+   ],
+   "props": {
+    "mesh_size": [
+     0,
+     0,
+     0
+    ],
+    "subject.shot_id": "SH_Gouge",
+    "subject.box_extent": [
+     6,
+     10,
+     15
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Bottle",
+   "folder": "Case/Subjects",
+   "loc": [
+    100.0,
+    -5400.0,
+    4.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Bottle"
+   ],
+   "props": {
+    "mesh_size": [
+     25,
+     8,
+     8
+    ],
+    "subject.shot_id": "SH_Bottle",
+    "subject.box_extent": [
+     18,
+     18,
+     10
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Boathook",
+   "folder": "Case/Subjects",
+   "loc": [
+    -290.0,
+    -4790.0,
+    -125.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Boathook"
+   ],
+   "props": {
+    "mesh_size": [
+     6,
+     170,
+     6
+    ],
+    "subject.shot_id": "SH_Boathook",
+    "subject.box_extent": [
+     15,
+     70,
+     15
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_BaleHook",
+   "folder": "Case/Subjects",
+   "loc": [
+    -100.0,
+    -3450.0,
+    168.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_BaleHook"
+   ],
+   "props": {
+    "mesh_size": [
+     25,
+     6,
+     25
+    ],
+    "subject.shot_id": "SH_BaleHook",
+    "subject.box_extent": [
+     18,
+     18,
+     20
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_CraneLog",
+   "folder": "Case/Subjects",
+   "loc": [
+    60.0,
+    -2060.0,
+    1300.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_CraneLog"
+   ],
+   "props": {
+    "mesh_size": [
+     21,
+     30,
+     3
+    ],
+    "subject.shot_id": "SH_CraneLog",
+    "subject.box_extent": [
+     22,
+     25,
+     8
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_GateBook",
+   "folder": "Case/Subjects",
+   "loc": [
+    -400.0,
+    2800.0,
+    103.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_GateBook"
+   ],
+   "props": {
+    "mesh_size": [
+     30,
+     22,
+     4
+    ],
+    "subject.shot_id": "SH_GateBook",
+    "subject.box_extent": [
+     22,
+     22,
+     8
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Movements",
+   "folder": "Case/Subjects",
+   "loc": [
+    -500.0,
+    2885.0,
+    150.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Movements"
+   ],
+   "props": {
+    "mesh_size": [
+     100,
+     4,
+     70
+    ],
+    "subject.shot_id": "SH_Movements",
+    "subject.box_extent": [
+     55,
+     8,
+     40
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_CashTape",
+   "folder": "Case/Subjects",
+   "loc": [
+    1600.0,
+    4575.0,
+    141.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_CashTape"
+   ],
+   "props": {
+    "mesh_size": [
+     8,
+     20,
+     1
+    ],
+    "subject.shot_id": "SH_CashTape",
+    "subject.box_extent": [
+     12,
+     18,
+     6
+    ],
+    "subject.lit_by_scene": true
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Slate",
+   "folder": "Case/Subjects",
+   "loc": [
+    1795.0,
+    4595.0,
+    180.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Slate"
+   ],
+   "props": {
+    "mesh_size": [
+     3,
+     45,
+     35
+    ],
+    "subject.shot_id": "SH_Slate",
+    "subject.box_extent": [
+     8,
+     24,
+     20
+    ],
+    "subject.lit_by_scene": true
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_GangwayBook",
+   "folder": "Case/Subjects",
+   "loc": [
+    785.0,
+    -1545.0,
+    522.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_GangwayBook"
+   ],
+   "props": {
+    "mesh_size": [
+     30,
+     22,
+     3
+    ],
+    "subject.shot_id": "SH_GangwayBook",
+    "subject.box_extent": [
+     20,
+     20,
+     8
+    ],
+    "subject.lit_by_scene": true
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Tally",
+   "folder": "Case/Subjects",
+   "loc": [
+    898.0,
+    -2000.0,
+    445.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Tally"
+   ],
+   "props": {
+    "mesh_size": [
+     2,
+     25,
+     35
+    ],
+    "subject.shot_id": "SH_Tally",
+    "subject.box_extent": [
+     6,
+     18,
+     22
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Crates",
+   "folder": "Case/Subjects",
+   "loc": [
+    1250.0,
+    -680.0,
+    445.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Crates"
+   ],
+   "props": {
+    "mesh_size": [
+     120,
+     80,
+     90
+    ],
+    "subject.shot_id": "SH_Crates",
+    "subject.box_extent": [
+     65,
+     45,
+     50
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_CabinDesk",
+   "folder": "Case/Subjects",
+   "loc": [
+    1000.0,
+    -880.0000000000001,
+    476.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_CabinDesk"
+   ],
+   "props": {
+    "mesh_size": [
+     30,
+     21,
+     2
+    ],
+    "subject.shot_id": "SH_CabinDesk",
+    "subject.box_extent": [
+     22,
+     20,
+     6
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Locker",
+   "folder": "Case/Subjects",
+   "loc": [
+    -2170.0,
+    2400.0,
+    95.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Locker"
+   ],
+   "props": {
+    "mesh_size": [
+     0,
+     0,
+     0
+    ],
+    "subject.shot_id": "SH_Locker",
+    "subject.box_extent": [
+     25,
+     30,
+     90
+    ],
+    "subject.lit_by_scene": true
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Roster",
+   "folder": "Case/Subjects",
+   "loc": [
+    -1525.0,
+    2500.0,
+    160.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Roster"
+   ],
+   "props": {
+    "mesh_size": [
+     2,
+     30,
+     42
+    ],
+    "subject.shot_id": "SH_Roster",
+    "subject.box_extent": [
+     6,
+     18,
+     24
+    ],
+    "subject.lit_by_scene": true
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Draft",
+   "folder": "Case/Subjects",
+   "loc": [
+    -1850.0,
+    2600.0,
+    76.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Draft"
+   ],
+   "props": {
+    "mesh_size": [
+     21,
+     30,
+     1
+    ],
+    "subject.shot_id": "SH_Draft",
+    "subject.box_extent": [
+     20,
+     20,
+     6
+    ],
+    "subject.lit_by_scene": true
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseGateActor",
+   "label": "Gate_CabinDoor",
+   "folder": "Case/Gates",
+   "loc": [
+    960.0,
+    -1010.0,
+    509.99999999999994
+   ],
+   "props": {
+    "mesh_size": [
+     120,
+     12,
+     220
+    ],
+    "gate.gate": "G_Cabin"
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseGateActor",
+   "label": "Gate_LockerDoor",
+   "folder": "Case/Gates",
+   "loc": [
+    -2143.0,
+    2400.0,
+    95.0
+   ],
+   "props": {
+    "mesh_size": [
+     3,
+     58,
+     186
+    ],
+    "gate.gate": "G_Locker"
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CasePersonActor",
+   "label": "Holt",
+   "folder": "Case/People",
+   "tags": [
+    "NPC",
+    "P_Holt"
+   ],
+   "loc": [
+    470.0,
+    -1800.0,
+    92.0
+   ],
+   "rot": [
+    0,
+    90.0,
+    0.0
+   ],
+   "props": {
+    "talk.speaker": "P_Holt",
+    "height_cm": 190
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CasePersonActor",
+   "label": "Kordes",
+   "folder": "Case/People",
+   "tags": [
+    "NPC",
+    "P_Kordes"
+   ],
+   "loc": [
+    580.0,
+    -1450.0,
+    492.0
+   ],
+   "rot": [
+    0,
+    -180.0,
+    0.0
+   ],
+   "props": {
+    "talk.speaker": "P_Kordes",
+    "height_cm": 182,
+    "hidden_with_shots": [
+     "SH_Handoff"
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CasePersonActor",
+   "label": "Varga",
+   "folder": "Case/People",
+   "tags": [
+    "NPC",
+    "P_Varga"
+   ],
+   "loc": [
+    -900.0,
+    -2100.0,
+    -128.00000000000003
+   ],
+   "rot": [
+    0,
+    0.0,
+    0.0
+   ],
+   "props": {
+    "talk.speaker": "P_Varga",
+    "height_cm": 186,
+    "hidden_with_shots": [
+     "SH_Fishing",
+     "SH_Handoff"
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CasePersonActor",
+   "label": "Nora",
+   "folder": "Case/People",
+   "tags": [
+    "NPC",
+    "P_Nora"
+   ],
+   "loc": [
+    1680.0,
+    4800.0,
+    92.0
+   ],
+   "rot": [
+    0,
+    -180.0,
+    0.0
+   ],
+   "props": {
+    "talk.speaker": "P_Nora",
+    "height_cm": 160
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CasePersonActor",
+   "label": "Brannock_Rope",
+   "folder": "Case/People",
+   "tags": [
+    "NPC",
+    "P_Brannock"
+   ],
+   "loc": [
+    -50.0,
+    -5550.0,
+    92.0
+   ],
+   "rot": [
+    0,
+    90.0,
+    0.0
+   ],
+   "props": {
+    "talk.speaker": "P_Brannock",
+    "height_cm": 0,
+    "nights": [
+     1
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CasePersonActor",
+   "label": "Brannock_Booth",
+   "folder": "Case/People",
+   "tags": [
+    "NPC",
+    "P_Brannock"
+   ],
+   "loc": [
+    -500.0,
+    2800.0,
+    92.0
+   ],
+   "rot": [
+    0,
+    -90.0,
+    0.0
+   ],
+   "props": {
+    "talk.speaker": "P_Brannock",
+    "height_cm": 0,
+    "nights": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CasePersonActor",
+   "label": "Varga_Fishing",
+   "folder": "Case/People",
+   "tags": [
+    "NPC",
+    "P_Varga"
+   ],
+   "loc": [
+    -850.0,
+    -5300.0,
+    -128.00000000000003
+   ],
+   "rot": [
+    0,
+    0.0,
+    0.0
+   ],
+   "props": {
+    "talk.speaker": "P_Varga",
+    "height_cm": 186,
+    "subject.shot_id": "SH_Fishing",
+    "subject.box_extent": [
+     40,
+     40,
+     95
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CasePersonActor",
+   "label": "Kordes_Handoff",
+   "folder": "Case/People",
+   "tags": [
+    "NPC",
+    "P_Kordes"
+   ],
+   "loc": [
+    420.0,
+    -840.0,
+    92.0
+   ],
+   "rot": [
+    0,
+    90.0,
+    0.0
+   ],
+   "props": {
+    "talk.speaker": "P_Kordes",
+    "height_cm": 182,
+    "subject.shot_id": "SH_Handoff",
+    "subject.box_extent": [
+     45,
+     90,
+     95
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CasePersonActor",
+   "label": "Varga_Handoff",
+   "folder": "Case/People",
+   "tags": [
+    "NPC",
+    "P_Varga"
+   ],
+   "loc": [
+    420.0,
+    -760.0,
+    92.0
+   ],
+   "rot": [
+    0,
+    -90.0,
+    0.0
+   ],
+   "props": {
+    "talk.speaker": "P_Varga",
+    "height_cm": 186,
+    "shown_with_shot": "SH_Handoff"
+   }
+  }
+ ]
+}

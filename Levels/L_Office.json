@@ -1,0 +1,1063 @@
+{
+ "map": "/Game/Maps/L_Office",
+ "partitioned": false,
+ "environment": {
+  "sun": {
+   "rot": [
+    -20,
+    -150,
+    0
+   ],
+   "intensity": 0.08,
+   "color": [
+    0.55,
+    0.65,
+    1.0
+   ]
+  },
+  "sky": true,
+  "fog": {
+   "density": 0.04
+  }
+ },
+ "actors": [
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_Floor",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    400.0,
+    -300.0,
+    360.0
+   ],
+   "scale": [
+    8.4,
+    6.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_Ceiling",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    400.0,
+    -300.0,
+    680.0
+   ],
+   "scale": [
+    8.4,
+    6.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallS",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    310.0,
+    10.0,
+    520.0
+   ],
+   "scale": [
+    6.6,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallS",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    700.0,
+    10.0,
+    630.0
+   ],
+   "scale": [
+    1.2,
+    0.2,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallS",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    790.0,
+    10.0,
+    520.0
+   ],
+   "scale": [
+    0.6,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallN",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    115.0,
+    -610.0,
+    520.0
+   ],
+   "scale": [
+    2.7,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallN",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    400.0,
+    -610.0,
+    400.0
+   ],
+   "scale": [
+    3.0,
+    0.2,
+    0.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallN",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    400.0,
+    -610.0,
+    660.0
+   ],
+   "scale": [
+    3.0,
+    0.2,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallN",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    685.0,
+    -610.0,
+    520.0
+   ],
+   "scale": [
+    2.7,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallW",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    -10.0,
+    -300,
+    520.0
+   ],
+   "scale": [
+    0.2,
+    6,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallE",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    810.0,
+    -45.0,
+    520.0
+   ],
+   "scale": [
+    0.2,
+    0.9,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallE",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    810.0,
+    -150.0,
+    630.0
+   ],
+   "scale": [
+    0.2,
+    1.2,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "AgencyOffice_WallE",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    810.0,
+    -405.0,
+    520.0
+   ],
+   "scale": [
+    0.2,
+    3.9,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_Floor",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    700.0,
+    170.0,
+    360.0
+   ],
+   "scale": [
+    3.4,
+    3.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_Ceiling",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    700.0,
+    170.0,
+    680.0
+   ],
+   "scale": [
+    3.4,
+    3.4,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_WallS",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    700.0,
+    330.0,
+    520.0
+   ],
+   "scale": [
+    3.4,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_WallN",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    585.0,
+    10.0,
+    520.0
+   ],
+   "scale": [
+    1.1,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_WallN",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    700.0,
+    10.0,
+    630.0
+   ],
+   "scale": [
+    1.2,
+    0.2,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_WallN",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    815.0,
+    10.0,
+    520.0
+   ],
+   "scale": [
+    1.1,
+    0.2,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_WallW",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    540.0,
+    170.0,
+    520.0
+   ],
+   "scale": [
+    0.2,
+    3.0,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_WallE",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    860.0,
+    170.0,
+    520.0
+   ],
+   "scale": [
+    0.2,
+    3.0,
+    3.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Desk_Detective",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    440.0,
+    -195.0,
+    407.5
+   ],
+   "scale": [
+    1.8,
+    0.9,
+    0.75
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Desk_ColleagueW",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    150.0,
+    -425.0,
+    407.5
+   ],
+   "scale": [
+    1.8,
+    0.9,
+    0.75
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Desk_ColleagueE",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    650.0,
+    -425.0,
+    407.5
+   ],
+   "scale": [
+    1.8,
+    0.9,
+    0.75
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Phone",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    505.0,
+    -215.0,
+    450.0
+   ],
+   "scale": [
+    0.3,
+    0.3,
+    0.1
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Board",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    15.0,
+    -290.0,
+    540.0
+   ],
+   "scale": [
+    0.2,
+    4.2,
+    1.6
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "DryingLine",
+   "folder": "Interiors/AgencyOffice",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    680.0,
+    -90.0,
+    559.0
+   ],
+   "scale": [
+    2.4,
+    0.04,
+    0.02
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_Bench",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    700.0,
+    275.0,
+    415.0
+   ],
+   "scale": [
+    2.8,
+    0.7,
+    0.9
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Darkroom_Enlarger",
+   "folder": "Interiors/Darkroom",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    790.0,
+    275.0,
+    510.0
+   ],
+   "scale": [
+    0.6,
+    0.5,
+    1.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Shop",
+   "folder": "Greybox/Building",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    400.0,
+    -140.0,
+    175.0
+   ],
+   "scale": [
+    8.4,
+    9.6,
+    3.5
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Landing",
+   "folder": "Greybox/Building",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    920.0,
+    -150.0,
+    360.0
+   ],
+   "scale": [
+    2.0,
+    1.8,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Building_Upper",
+   "folder": "Greybox/Building",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    425.0,
+    -140.0,
+    730.0
+   ],
+   "scale": [
+    8.9,
+    9.6,
+    0.8
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Street",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    500,
+    -1200,
+    -10.0
+   ],
+   "scale": [
+    70,
+    36,
+    0.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Pavement_Near",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    500,
+    -720.0,
+    7.5
+   ],
+   "scale": [
+    70,
+    2.0,
+    0.15
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "TramRail_A",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    500,
+    -1295.0,
+    1.5
+   ],
+   "scale": [
+    70,
+    0.1,
+    0.03
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "TramRail_B",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    500,
+    -1435.0,
+    1.5
+   ],
+   "scale": [
+    70,
+    0.1,
+    0.03
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Pavement_Far",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    500,
+    -2000.0,
+    7.5
+   ],
+   "scale": [
+    70,
+    2.0,
+    0.15
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Opposite_Block",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    500,
+    -2450.0,
+    700.0
+   ],
+   "scale": [
+    70,
+    7.0,
+    14.0
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "label": "Cinema_Marquee",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+   ],
+   "loc": [
+    400.0,
+    -2060.0,
+    380.0
+   ],
+   "scale": [
+    10.0,
+    0.8,
+    1.2
+   ]
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "StreetLamp_Post0",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    -1400,
+    -760.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "StreetLamp0",
+   "folder": "Lights",
+   "loc": [
+    -1400,
+    -760.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "StreetLamp_Post1",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    400,
+    -760.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "StreetLamp1",
+   "folder": "Lights",
+   "loc": [
+    400,
+    -760.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "label": "StreetLamp_Post2",
+   "folder": "Greybox/Uptown",
+   "materials": [
+    "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+   ],
+   "loc": [
+    2200,
+    -760.0,
+    250.0
+   ],
+   "scale": [
+    0.15,
+    0.15,
+    5.0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "StreetLamp2",
+   "folder": "Lights",
+   "loc": [
+    2200,
+    -760.0,
+    490.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 30,
+    "point_light_component.attenuation_radius": 1300,
+    "point_light_component.light_color": [
+     255,
+     175,
+     95,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Cinema_Neon",
+   "folder": "Lights",
+   "loc": [
+    400.0,
+    -1980.0,
+    380.0
+   ],
+   "props": {
+    "point_light_component.intensity": 40,
+    "point_light_component.attenuation_radius": 1800,
+    "point_light_component.light_color": [
+     60,
+     230,
+     255,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "DeskLamp",
+   "folder": "Lights",
+   "loc": [
+    440.00000000000006,
+    -200.0,
+    480.00000000000006
+   ],
+   "props": {
+    "point_light_component.intensity": 8,
+    "point_light_component.attenuation_radius": 600,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Landing_Bulb",
+   "folder": "Lights",
+   "loc": [
+    919.9999999999999,
+    -150.0,
+    630.0000000000001
+   ],
+   "props": {
+    "point_light_component.intensity": 4,
+    "point_light_component.attenuation_radius": 400,
+    "point_light_component.light_color": [
+     255,
+     205,
+     150,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "label": "Safelight",
+   "folder": "Lights",
+   "loc": [
+    700.0,
+    170.0,
+    610.0
+   ],
+   "props": {
+    "point_light_component.intensity": 3,
+    "point_light_component.attenuation_radius": 400,
+    "point_light_component.light_color": [
+     142,
+     15,
+     22,
+     255
+    ]
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Tripod",
+   "folder": "Case/Subjects",
+   "loc": [
+    620.0,
+    -50.0,
+    445.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Tripod"
+   ],
+   "props": {
+    "mesh_size": [
+     45,
+     45,
+     150
+    ],
+    "subject.shot_id": "SH_Tripod",
+    "subject.box_extent": [
+     30,
+     30,
+     78
+    ],
+    "subject.lit_by_scene": true
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Meridian",
+   "folder": "Case/Subjects",
+   "loc": [
+    730.0,
+    -90.0,
+    542.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Meridian"
+   ],
+   "props": {
+    "mesh_size": [
+     25,
+     1,
+     30
+    ],
+    "subject.shot_id": "SH_Meridian",
+    "subject.box_extent": [
+     16,
+     8,
+     18
+    ],
+    "subject.lit_by_scene": true
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseSubjectActor",
+   "label": "SH_Drawer",
+   "folder": "Case/Subjects",
+   "loc": [
+    440.00000000000006,
+    -135.0,
+    430.0
+   ],
+   "tags": [
+    "SUBJ",
+    "SH_Drawer"
+   ],
+   "props": {
+    "mesh_size": [
+     50,
+     30,
+     12
+    ],
+    "subject.shot_id": "SH_Drawer",
+    "subject.box_extent": [
+     28,
+     22,
+     12
+    ],
+    "subject.lit_by_scene": true
+   }
+  },
+  {
+   "class": "/Script/HarrowMark.CaseDriveActor",
+   "label": "OfficeDoor",
+   "folder": "Case/Drive",
+   "loc": [
+    810.0,
+    -150.0,
+    480.0
+   ],
+   "rot": [
+    0,
+    0.0,
+    0.0
+   ],
+   "props": {
+    "mesh_size": [
+     12,
+     120,
+     220
+    ]
+   }
+  },
+  {
+   "class": "/Script/Engine.PlayerStart",
+   "label": "PlayerStart_Office",
+   "folder": "Markers",
+   "loc": [
+    700.0,
+    -150.0,
+    470.0
+   ],
+   "rot": [
+    0,
+    -180.0,
+    0.0
+   ],
+   "props": {
+    "player_start_tag": "Office"
+   }
+  },
+  {
+   "class": "/Script/Engine.PlayerStart",
+   "label": "PlayerStart_Dawn",
+   "folder": "Markers",
+   "loc": [
+    700.0,
+    140.0,
+    470.0
+   ],
+   "rot": [
+    0,
+    -270.0,
+    0.0
+   ],
+   "props": {
+    "player_start_tag": "Dawn"
+   }
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "map": "/Game/Dev/L_RTXDITest",
+ "environment": {
+  "sun": {
+   "rot": [
+    -25,
+    210,
+    0
+   ],
+   "intensity": 0.2,
+   "color": [
+    0.6,
+    0.7,
+    1.0
+   ]
+  },
+  "sky": true,
+  "fog": {
+   "density": 0.03
+  }
+ },
+ "player_start": {
+  "loc": [
+   -2600,
+   -2600,
+   120
+  ],
+  "rot": [
+   0,
+   45,
+   0
+  ]
+ },
+ "actors": [
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "loc": [
+    0,
+    0,
+    -10
+   ],
+   "scale": [
+    60,
+    60,
+    0.2
+   ],
+   "label": "Floor"
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cylinder",
+   "loc": [
+    -2000,
+    -2000,
+    200
+   ],
+   "scale": [
+    0.6,
+    0.6,
+    4
+   ],
+   "grid": {
+    "count": [
+     6,
+     6
+    ],
+    "step": [
+     800,
+     800
+    ]
+   },
+   "label": "Pillar"
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "loc": [
+    -1600,
+    0,
+    150
+   ],
+   "scale": [
+    0.3,
+    12,
+    3
+   ],
+   "label": "WallA"
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "loc": [
+    800,
+    1200,
+    150
+   ],
+   "scale": [
+    14,
+    0.3,
+    3
+   ],
+   "label": "WallB"
+  },
+  {
+   "mesh": "/Engine/BasicShapes/Cube",
+   "loc": [
+    1600,
+    -1400,
+    100
+   ],
+   "scale": [
+    3,
+    3,
+    2
+   ],
+   "label": "Crate",
+   "rot": [
+    0,
+    30,
+    0
+   ]
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "loc": [
+    -1600,
+    -1600,
+    260
+   ],
+   "grid": {
+    "count": [
+     4,
+     3
+    ],
+    "step": [
+     1100,
+     1600
+    ]
+   },
+   "props": {
+    "point_light_component.intensity": 40.0,
+    "point_light_component.attenuation_radius": 1600.0,
+    "point_light_component.light_color": [
+     255,
+     170,
+     90,
+     255
+    ],
+    "point_light_component.source_radius": 8.0
+   },
+   "label": "LampSodium"
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "loc": [
+    -1050,
+    -800,
+    180
+   ],
+   "grid": {
+    "count": [
+     4,
+     3
+    ],
+    "step": [
+     1100,
+     1600
+    ]
+   },
+   "props": {
+    "point_light_component.intensity": 40.0,
+    "point_light_component.attenuation_radius": 1600.0,
+    "point_light_component.light_color": [
+     140,
+     180,
+     255,
+     255
+    ],
+    "point_light_component.source_radius": 8.0
+   },
+   "label": "LampCold"
+  },
+  {
+   "class": "/Script/Engine.PointLight",
+   "loc": [
+    -1600,
+    0,
+    60
+   ],
+   "grid": {
+    "count": [
+     4,
+     3
+    ],
+    "step": [
+     1100,
+     1600
+    ]
+   },
+   "props": {
+    "point_light_component.intensity": 40.0,
+    "point_light_component.attenuation_radius": 1600.0,
+    "point_light_component.light_color": [
+     170,
+     255,
+     190,
+     255
+    ],
+    "point_light_component.source_radius": 8.0
+   },
+   "label": "LampGreen"
+  },
+  {
+   "class": "/Script/Engine.CameraActor",
+   "label": "TestCam",
+   "loc": [
+    -2600,
+    -2600,
+    260
+   ],
+   "rot": [
+    -12,
+    45,
+    0
+   ],
+   "props": {
+    "auto_activate_for_player": "PLAYER0",
+    "camera_component.field_of_view": 70.0
+   }
+  }
+ ],
+ "game_mode": "/Script/Engine.GameModeBase"
+}
