@@ -1,0 +1,17 @@
+# JamForge runtime state
+.jam/
+INBOX.md
+# Unreal
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+.vs/
+*.sln
+*.VC.db
+*.opensdf
+*.sdf
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+# Python (forge/scripts)
+__pycache__/

@@ -1,0 +1,24 @@
+* text=auto
+*.uasset binary merge=binary
+*.umap binary merge=binary
+*.png binary
+*.wav binary
+*.fbx binary
+*.jpg binary
+*.jpeg binary
+*.tga binary
+*.exr binary
+*.hdr binary
+*.psd binary
+*.ogg binary
+*.mp3 binary
+*.flac binary
+*.mp4 binary
+*.glb binary
+*.obj binary
+*.blend binary
+*.ttf binary
+*.otf binary
+*.zip binary
+# Many agents append to the knowledge index at once: keep every side of a merge.
+docs/kb/INDEX.md merge=union

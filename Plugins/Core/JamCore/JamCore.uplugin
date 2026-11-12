@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "JamCore",
+	"Description": "Shared contracts (interfaces, gameplay tags, log category, base types) used by every feature plugin. Additive changes only.",
+	"Category": "Jam",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"Modules": [
+		{ "Name": "JamCore", "Type": "Runtime", "LoadingPhase": "Default" }
+	]
+}

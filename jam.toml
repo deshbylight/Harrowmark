@@ -1,0 +1,56 @@
+# JamForge configuration for this game (owner-edited; agents cannot change it).
+# Every key is optional; defaults live in JamForge/jamforge/config.py.
+
+[project]
+name = "HarrowMark"
+uproject = "HarrowMark.uproject"
+
+[agents]
+max_agents = 24
+max_build_worktrees = 6
+model = "claude-opus-5-5"
+effort = "max"
+fallback_model = ""  # Opus only
+# Every agent is an ultracode lead that fans its task out to subagents inside its own process.
+ultracode = true
+# RAM guard: Unreal builds and editor runs need several GB on top of the agents, hence the larger reserve.
+min_free_ram_gb = 10.0
+agent_ram_gb = 0.7
+
+[roles.builder]
+cap = 16
+
+[slots]
+# Most that run at once; the merge gate is served first, then arrival order. Free RAM can admit fewer
+# ([slot_ram] GB per holder). Builds of different checkouts run in parallel (installed engine) and a
+# build is skipped when no build input changed since the last green one.
+build = 3
+ue_test = 3    # headless editor: automation tests, editor Python
+ue_render = 2  # game windows on the GPU: jf shot, jf video
+
+[learn]
+# Self-improvement: optimizer and toolsmith agents keep forge/ (scripts, playbooks, prompt overlays,
+# A/B experiments). share = part of agent capacity reserved for them while game tasks wait.
+enabled = true
+share = 0.28
+
+[jam]
+# Submission zip name TeamName_GameName (letters, digits, '-'); `jf package --zip` refuses while empty.
+team_name = ""
+game_name = ""
+
+[media]
+# itch.io game page, appended to social posts that carry no link (`jf publish`). Credentials never go
+# here: ~/.jamforge/secrets.toml (see README, Publishing media).
+game_url = ""
+
+[library]
+# Folders with Fab downloads and your own asset packs for `jf lib` (one pack per subfolder).
+paths = []
+# License for packs without a license file (Fab downloads have none), e.g. "Fab Standard License".
+default_license = ""
+
+[tools]
+# Empty = autodetect from PATH and standard install folders.
+blender = ""
+ffmpeg = ""

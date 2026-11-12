@@ -1,0 +1,13 @@
+{
+  "map": "/Game/Maps/L_Example",
+  "environment": {"sun": {"rot": [-35, 40, 0], "intensity": 6}, "sky": true, "fog": {"density": 0.01}, "exposure": 0.5},
+  "player_start": {"loc": [-600, 0, 150], "rot": [0, 0, 0]},
+  "actors": [
+    {"mesh": "/Engine/BasicShapes/Cube", "loc": [0, 0, -50], "scale": [30, 30, 1], "label": "Floor",
+     "materials": ["/Engine/BasicShapes/BasicShapeMaterial"]},
+    {"mesh": "/Engine/BasicShapes/Cylinder", "loc": [0, -200, 50], "grid": {"count": [3, 3], "step": [150, 150]},
+     "random_yaw": true, "label": "Pillar", "folder": "Props"},
+    {"class": "/Script/Engine.PointLight", "loc": [100, 0, 250],
+     "props": {"point_light_component.intensity": 8000, "point_light_component.light_color": [255, 120, 60, 255]}}
+  ]
+}

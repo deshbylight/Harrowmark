@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "JamProbe",
+	"Description": "Pipeline probes: -JamShots=<dir> -JamShotSeconds=N captures screenshots then quits; smoke automation tests under Project.",
+	"Category": "Jam",
+	"EnabledByDefault": true,
+	"CanContainContent": false,
+	"Modules": [
+		{ "Name": "JamProbe", "Type": "Runtime", "LoadingPhase": "PostEngineInit" }
+	],
+	"Plugins": [
+		{ "Name": "JamCore", "Enabled": true }
+	]
+}

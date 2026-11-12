@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "JamUI",
+	"Description": "Themed UI built in C++: theme in Project Settings > Game > Jam UI, UJamScreen base with layout helpers, ready menu screen, per-player screen stack with input modes and focus.",
+	"Category": "Jam",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"Modules": [
+		{ "Name": "JamUI", "Type": "Runtime", "LoadingPhase": "Default" }
+	],
+	"Plugins": [
+		{ "Name": "JamCore", "Enabled": true }
+	]
+}
