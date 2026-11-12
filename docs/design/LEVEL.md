@@ -93,8 +93,8 @@ Changes from the earlier map (ASSETS.md section 1 now points here):
 | From | To | Path | Walk |
 |---|---|---|---|
 | The car (curb outside the Lighthouse) | Body at the edge | street, gate, quay, pier | ~110 m, 37 s |
-| Lighthouse yard | Catwalk mouth | yard gate, the dark east end of the street, wicket, behind Warehouse 5, the dark gap at the pier root, ramp, pontoon | ~80 m, 27 s |
-| Customs berth | Lighthouse yard | the same way back (the killer's 23:46-23:54) | ~80 m, 27 s |
+| Lighthouse yard | Catwalk mouth | yard gate, the dark east end of the street, wicket, behind Warehouse 5, the dark gap at the pier root, ramp, pontoon | ~90 m, 30 s |
+| Customs berth | Lighthouse yard | the same way back (the killer's 23:46-23:54) | ~90 m, 30 s |
 | The car | Agency office | the drive: a fade and an authored car shot | 10 min of case time each way |
 | Body | Lower landing | ladder on the west side, 5 m away | 6 s |
 | Customs berth | Lower landing | catwalk under the pier, 28 m, crouched | 14 s |
@@ -119,7 +119,7 @@ see the same thing.
 | A10: "splash 23:41 W side?" | Crane cab | The west corner of the edge, 35 m off, black. A splash there is heard, not seen. |
 | Nobody saw the killer go to the edge | Crane cab, gate booth | The catwalk is under the deck overhang: invisible from the cab and from the quay. Its mouth at the berth end is a black slot under the deck edge, behind the NO ADMITTANCE board; the crane flood lights the pontoon, not the slot. At 23:05-23:15 the pontoon is empty (Varga at the customs office, Morrow at the bar) and Holt's eyes are on the sling over No. 2 hatch, east of the pier. |
 | Nobody logged the detective going out | Gate booth, both windows | The wicket behind Warehouse 5 is east of the booth, outside its north and west windows. The agency's pass keeps it out of the visitors' book anyway (A11 rule). |
-| S02: "Your car was in my yard tonight. I thought you'd come in for one." | Bar, back door by the empties | The yard under its one bulb: a car parked there is plain to anyone carrying out the empties. The yard gate opens onto the dark east end of the street, 25 m from the wicket. Nobody sees a man go from the yard to the wicket; the bar's windows face the gate, not the yard. |
+| S02: "Your car was in my yard tonight. I thought you'd come in for one." | Bar, back door by the empties | The yard under its one bulb: a car parked there is plain to anyone carrying out the empties. The yard gate opens onto the dark east end of the street, 15 m from the wicket. Nobody sees a man go from the yard to the wicket; the bar's windows face the gate, not the yard. |
 | D02: "CL-2 under the swing" | Crane cab | The customs berth lies straight below the jib arc, and CL-2's mooring post with its "CL-2" stencil is in the floodlight. A jib swung full would hit the launch's mast. |
 | A09: "eight feet up, nothing to stand on" | Edge | The lamp head at 2.4 m; the nearest bollard 3 m away, the fish crates 20 m back; the curb is 15 cm. |
 | A24: gouge "higher than a man's head" | Edge | A fresh pale bite in the post at 2.1 m, on the side facing the deck, where a long swing would land. |

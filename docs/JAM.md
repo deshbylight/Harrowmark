@@ -15,9 +15,20 @@ section numbers below, written as "OR 7(c)", refer to it.
 
 ## Theme
 
-**Director's Cut** (revealed 2026-11-11 19:00 UTC; the owner confirmed it). It is an open prompt: make
-something you have never done before. Theme is a judging criterion, so the game must show it in play,
-not only in the page text. How HarrowMark reads it: `docs/GDD.md` section 5.
+**Director's Cut**, announced at the kickoff stream (2026-11-11). Epic's wording (Unreal Engine on X,
+the jam page has no theme text):
+
+> Your vision, your specific edits and ultimately: your final cut - your Director's Cut.
+> Every developer has that one feature that didn't quite make it, the mechanic scoped out while sleep
+> deprived at 2 AM or that idea you've had shelved and never quite found a place for it yet. Well, now's
+> your chance to finally build it all in this year's Epic MegaJam.
+> If you're utilizing AI agents in your workflows, you're directing those too! Set the vision, delegate
+> your tasks and decide what goes in and what doesn't. Aim for ambition and direct your path accordingly!
+
+The theme is about the developer, not the game's content: no genre, setting or film motif is required,
+and agents must not add in-game "cut" or film-editing features for it. The judging line is "a fresh,
+clever take on the theme"; it is shown through the owner's shelved idea, the ambition of the build and
+the dev log of how the agents were directed.
 
 ## What may exist before the start
 
