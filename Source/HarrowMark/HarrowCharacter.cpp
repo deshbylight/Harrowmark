@@ -2,6 +2,7 @@
 
 #include "CaseInteractComponents.h"
 #include "Camera/CameraComponent.h"
+#include "Camera/PlayerCameraManager.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/SpotLightComponent.h"
@@ -11,70 +12,128 @@
 #include "Engine/SkeletalMesh.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/PlayerController.h"
-#include "GameFramework/SpringArmComponent.h"
 #include "InputAction.h"
 #include "InputMappingContext.h"
 #include "InputModifiers.h"
 #include "PhotoCameraComponent.h"
 #include "UObject/ConstructorHelpers.h"
 
+#if !UE_BUILD_SHIPPING
+#include "HAL/IConsoleManager.h"
+#include "Kismet/GameplayStatics.h"
+
+// Screenshot runs and tests have no mouse.
+// hm.Raise 1|0 raises or lowers the camera of player 0.
+static FAutoConsoleCommandWithWorldAndArgs GRaiseCommand(TEXT("hm.Raise"), TEXT("hm.Raise 1|0: raise the camera to the eye or lower it."),
+	FConsoleCommandWithWorldAndArgsDelegate::CreateLambda([](const TArray<FString>& Args, UWorld* World)
+	{
+		if (AHarrowCharacter* Detective = Cast<AHarrowCharacter>(UGameplayStatics::GetPlayerPawn(World, 0)))
+		{
+			Detective->SetRaised(Args.IsEmpty() || Args[0] != TEXT("0"));
+		}
+	}));
+// hm.Look <pitch> [yaw]: aim the view without a mouse (BugItGo would also switch on ghost mode).
+static FAutoConsoleCommandWithWorldAndArgs GLookCommand(TEXT("hm.Look"), TEXT("hm.Look <pitch> [yaw]: set the view rotation of player 0."),
+	FConsoleCommandWithWorldAndArgsDelegate::CreateLambda([](const TArray<FString>& Args, UWorld* World)
+	{
+		APlayerController* PC = UGameplayStatics::GetPlayerController(World, 0);
+		if (PC && !Args.IsEmpty())
+		{
+			FRotator View = PC->GetControlRotation();
+			View.Pitch = FCString::Atof(*Args[0]);
+			View.Yaw = Args.Num() > 1 ? FCString::Atof(*Args[1]) : View.Yaw;
+			PC->SetControlRotation(View);
+		}
+	}));
+// hm.Go <x> <y> <z> [yaw]: put player 0 somewhere on foot (BugItGo would leave it flying with no collision).
+static FAutoConsoleCommandWithWorldAndArgs GGoCommand(TEXT("hm.Go"), TEXT("hm.Go <x> <y> <z> [yaw]: teleport player 0, walking."),
+	FConsoleCommandWithWorldAndArgsDelegate::CreateLambda([](const TArray<FString>& Args, UWorld* World)
+	{
+		APlayerController* PC = UGameplayStatics::GetPlayerController(World, 0);
+		APawn* Pawn = PC ? PC->GetPawn() : nullptr;
+		if (Pawn && Args.Num() >= 3)
+		{
+			const FVector At(FCString::Atof(*Args[0]), FCString::Atof(*Args[1]), FCString::Atof(*Args[2]));
+			FRotator View = PC->GetControlRotation();
+			View.Yaw = Args.Num() > 3 ? FCString::Atof(*Args[3]) : View.Yaw;
+			Pawn->TeleportTo(At, FRotator(0.f, View.Yaw, 0.f));
+			PC->SetControlRotation(View);
+		}
+	}));
+// hm.Body 1|0: show the full world body to the player instead of the view body (a debug comparison of shadows).
+static FAutoConsoleCommandWithWorldAndArgs GBodyCommand(TEXT("hm.Body"), TEXT("hm.Body 1|0: show the world body to player 0."),
+	FConsoleCommandWithWorldAndArgsDelegate::CreateLambda([](const TArray<FString>& Args, UWorld* World)
+	{
+		if (ACharacter* Detective = Cast<ACharacter>(UGameplayStatics::GetPlayerPawn(World, 0)))
+		{
+			const bool bShow = Args.IsEmpty() || FCString::Atoi(*Args[0]) != 0;
+			Detective->GetMesh()->SetOwnerNoSee(!bShow);
+			for (USkeletalMeshComponent* Other : TInlineComponentArray<USkeletalMeshComponent*>(Detective))
+			{
+				if (Other != Detective->GetMesh())
+				{
+					Other->SetVisibility(!bShow);
+				}
+			}
+		}
+	}));
+#endif
+
 AHarrowCharacter::AHarrowCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.f);
-	bUseControllerRotationYaw = false;
+	bUseControllerRotationYaw = true;
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationRoll = false;
 
-	static ConstructorHelpers::FObjectFinder<USkeletalMesh> MeshAsset(TEXT("/Game/Characters/Mannequins/Meshes/SKM_Manny_Simple.SKM_Manny_Simple"));
-	static ConstructorHelpers::FClassFinder<UAnimInstance> AnimClass(TEXT("/Game/Characters/Mannequins/Anims/Unarmed/ABP_Unarmed"));
-	if (MeshAsset.Succeeded())
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> MeshAsset(TEXT("/Game/Characters/Detective/SK_CH01_Detective/SkeletalMeshes/SK_CH01_Detective.SK_CH01_Detective"));
+	static ConstructorHelpers::FClassFinder<UAnimInstance> AnimClass(TEXT("/Game/Characters/Detective/Anims/ABP_Unarmed_CH01"));
+	ViewBody = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("ViewBody"));
+	ViewBody->SetupAttachment(GetCapsuleComponent());
+	for (USkeletalMeshComponent* Body : {GetMesh(), ViewBody.Get()})
 	{
-		GetMesh()->SetSkeletalMesh(MeshAsset.Object);
+		if (MeshAsset.Succeeded())
+		{
+			Body->SetSkeletalMesh(MeshAsset.Object);
+		}
+		if (AnimClass.Succeeded())
+		{
+			Body->SetAnimInstanceClass(AnimClass.Class);
+		}
+		Body->SetRelativeLocationAndRotation(FVector(0.f, 0.f, -96.f), FRotator(0.f, -90.f, 0.f));
 	}
-	if (AnimClass.Succeeded())
-	{
-		GetMesh()->SetAnimInstanceClass(AnimClass.Class);
-	}
-	GetMesh()->SetRelativeLocationAndRotation(FVector(0.f, 0.f, -96.f), FRotator(0.f, -90.f, 0.f));
+	// Not EFirstPersonPrimitiveType: NvRTX's RTXDI shadow rays skip a WorldSpaceRepresentation, so the body
+	// would cast no shadow. A hidden-to-owner mesh stays in the ray tracing scene for shadows and reflections.
+	GetMesh()->SetOwnerNoSee(true);
+	GetMesh()->bCastHiddenShadow = true;
+	ViewBody->SetOnlyOwnerSee(true);
+	ViewBody->SetCastShadow(false);
+	ViewBody->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	ViewBody->bVisibleInRayTracing = false;
 
 	UCharacterMovementComponent* Move = GetCharacterMovement();
-	Move->bOrientRotationToMovement = true;
-	Move->RotationRate = FRotator(0.f, 540.f, 0.f);
+	Move->bOrientRotationToMovement = false;
 	Move->MaxWalkSpeed = WalkSpeed;
 	Move->MaxWalkSpeedCrouched = 150.f;
 	Move->BrakingDecelerationWalking = 2000.f;
 	Move->GetNavAgentPropertiesRef().bCanCrouch = true;
 	Move->SetCrouchedHalfHeight(58.f); // 1.16 m: fits the 1.7 m catwalk headroom (LEVEL.md)
-	BaseEyeHeight = 64.f;
+	BaseEyeHeight = 68.f; // 1.64 m standing
 	CrouchedEyeHeight = 40.f;
 
-	Boom = CreateDefaultSubobject<USpringArmComponent>(TEXT("Boom"));
-	Boom->SetupAttachment(RootComponent);
-	Boom->TargetArmLength = 240.f;
-	Boom->SocketOffset = FVector(0.f, 55.f, 60.f);
-	Boom->bUsePawnControlRotation = true;
-	Boom->ProbeSize = 14.f;
-	Boom->bEnableCameraLag = true;
-	Boom->CameraLagSpeed = 14.f;
-
-	ShoulderCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("ShoulderCamera"));
-	ShoulderCamera->SetupAttachment(Boom, USpringArmComponent::SocketName);
-	ShoulderCamera->bUsePawnControlRotation = false;
-	ShoulderCamera->SetFieldOfView(ShoulderFOV);
-
-	ViewfinderCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("ViewfinderCamera"));
-	ViewfinderCamera->SetupAttachment(RootComponent);
-	ViewfinderCamera->SetRelativeLocation(FVector(12.f, 0.f, BaseEyeHeight));
-	ViewfinderCamera->bUsePawnControlRotation = true;
-	ViewfinderCamera->SetAutoActivate(false);
+	EyeCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("EyeCamera"));
+	EyeCamera->SetupAttachment(GetCapsuleComponent());
+	EyeCamera->SetRelativeLocation(FVector(EyeForward, 0.f, BaseEyeHeight));
+	EyeCamera->bUsePawnControlRotation = true;
+	EyeCamera->SetFieldOfView(WalkFOV);
 
 	PhotoCamera = CreateDefaultSubobject<UPhotoCameraComponent>(TEXT("PhotoCamera"));
-	PhotoCamera->SetupAttachment(ViewfinderCamera);
+	PhotoCamera->SetupAttachment(EyeCamera);
 
 	Flashlight = CreateDefaultSubobject<USpotLightComponent>(TEXT("Flashlight"));
-	Flashlight->SetupAttachment(ViewfinderCamera);
+	Flashlight->SetupAttachment(EyeCamera);
 	Flashlight->SetRelativeLocation(FVector(0.f, 18.f, -22.f));
 	Flashlight->SetIntensityUnits(ELightUnits::Candelas);
 	Flashlight->SetIntensity(1200.f);
@@ -89,14 +148,41 @@ AHarrowCharacter::AHarrowCharacter()
 void AHarrowCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	// The player never sees his own head; the world copy keeps it for the shadow and the mirror.
+	ViewBody->HideBoneByName(TEXT("head"), EPhysBodyOp::PBO_None);
 	UpdateSpeed();
 }
 
 void AHarrowCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	ViewfinderCamera->SetRelativeLocation(FVector(12.f, 0.f, bIsCrouched ? CrouchedEyeHeight : BaseEyeHeight));
+	UpdateView(DeltaSeconds);
 	UpdateFocus();
+}
+
+float AHarrowCharacter::ViewfinderFOV() const
+{
+	float Aspect = 16.f / 9.f;
+	if (const APlayerController* PC = Cast<APlayerController>(Controller))
+	{
+		int32 X = 0, Y = 0;
+		PC->GetViewportSize(X, Y);
+		Aspect = Y > 0 ? static_cast<float>(X) / Y : Aspect;
+	}
+	return PhotoCamera->HorizontalFOV(Aspect);
+}
+
+void AHarrowCharacter::UpdateView(float DeltaSeconds)
+{
+	// The eye follows the crouch; raising eases the FOV to the lens on the same camera, so nothing cuts.
+	const float Target = bRaised ? 1.f : 0.f;
+	RaiseAlpha = RaiseSeconds > 0.f ? FMath::FInterpConstantTo(RaiseAlpha, Target, DeltaSeconds, 1.f / RaiseSeconds) : Target;
+	const float Ease = FMath::InterpEaseInOut(0.f, 1.f, RaiseAlpha, 2.f);
+	EyeCamera->SetFieldOfView(FMath::Lerp(WalkFOV, ViewfinderFOV(), Ease));
+	// Looking down, the eye leans out over the chest the way a head does, so the legs and shoes show.
+	const float Pitch = Controller ? FRotator::NormalizeAxis(Controller->GetControlRotation().Pitch) : 0.f;
+	const float Lean = FMath::Clamp(-Pitch / 90.f, 0.f, 1.f);
+	EyeCamera->SetRelativeLocation(FVector(EyeForward + LookDownForward * Lean, 0.f, bIsCrouched ? CrouchedEyeHeight : BaseEyeHeight));
 }
 
 void AHarrowCharacter::BuildInput()
@@ -154,6 +240,10 @@ void AHarrowCharacter::NotifyControllerChanged()
 	BuildInput();
 	if (const APlayerController* PC = Cast<APlayerController>(Controller))
 	{
+		if (PC->PlayerCameraManager)
+		{
+			PC->PlayerCameraManager->ViewPitchMin = MinPitch;
+		}
 		if (UEnhancedInputLocalPlayerSubsystem* Sub = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer()))
 		{
 			Sub->AddMappingContext(Mapping, 0);
@@ -213,19 +303,6 @@ void AHarrowCharacter::RaiseCamera()
 		return;
 	}
 	bRaised = true;
-	float Aspect = 16.f / 9.f;
-	if (const APlayerController* PC = Cast<APlayerController>(Controller))
-	{
-		int32 X = 0, Y = 0;
-		PC->GetViewportSize(X, Y);
-		Aspect = Y > 0 ? static_cast<float>(X) / Y : Aspect;
-	}
-	ViewfinderCamera->SetFieldOfView(PhotoCamera->HorizontalFOV(Aspect));
-	ShoulderCamera->Deactivate();
-	ViewfinderCamera->Activate();
-	GetMesh()->SetOwnerNoSee(true);
-	bUseControllerRotationYaw = true;
-	GetCharacterMovement()->bOrientRotationToMovement = false;
 	UpdateSpeed();
 	OnViewfinder.Broadcast(true);
 }
@@ -237,11 +314,6 @@ void AHarrowCharacter::LowerCamera()
 		return;
 	}
 	bRaised = false;
-	ViewfinderCamera->Deactivate();
-	ShoulderCamera->Activate();
-	GetMesh()->SetOwnerNoSee(false);
-	bUseControllerRotationYaw = false;
-	GetCharacterMovement()->bOrientRotationToMovement = true;
 	UpdateSpeed();
 	OnViewfinder.Broadcast(false);
 }

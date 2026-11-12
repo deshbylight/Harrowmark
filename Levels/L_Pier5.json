@@ -4187,7 +4187,7 @@
    "loc": [
     50.0,
     -2100.0,
-    1150.0
+    1080.0
    ],
    "props": {
     "spot_light_component.intensity": 400,
@@ -4214,7 +4214,7 @@
    "loc": [
     -250.0,
     -1900.0,
-    1150.0
+    1080.0
    ],
    "props": {
     "spot_light_component.intensity": 2500,
@@ -4259,7 +4259,7 @@
    "loc": [
     -540.0,
     -800,
-    390.0
+    420.0
    ],
    "props": {
     "point_light_component.intensity": 25,
@@ -4297,7 +4297,7 @@
    "loc": [
     540.0,
     -2000,
-    390.0
+    420.0
    ],
    "props": {
     "point_light_component.intensity": 25,
@@ -4335,7 +4335,7 @@
    "loc": [
     -540.0,
     -3300,
-    390.0
+    420.0
    ],
    "props": {
     "point_light_component.intensity": 25,
@@ -4373,7 +4373,7 @@
    "loc": [
     540.0,
     -4600,
-    390.0
+    420.0
    ],
    "props": {
     "point_light_component.intensity": 25,
@@ -4411,7 +4411,7 @@
    "loc": [
     -4200,
     200.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4449,7 +4449,7 @@
    "loc": [
     -2800,
     200.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4487,7 +4487,7 @@
    "loc": [
     -1400,
     200.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4525,7 +4525,7 @@
    "loc": [
     1400,
     200.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4563,7 +4563,7 @@
    "loc": [
     2800,
     200.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4601,7 +4601,7 @@
    "loc": [
     4200,
     200.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4639,7 +4639,7 @@
    "loc": [
     -3500,
     3100.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4677,7 +4677,7 @@
    "loc": [
     -2100,
     3100.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4715,7 +4715,7 @@
    "loc": [
     -700,
     3100.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4753,7 +4753,7 @@
    "loc": [
     3600,
     3100.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -4791,7 +4791,7 @@
    "loc": [
     4600,
     3100.0,
-    490.00000000000006
+    520.0
    ],
    "props": {
     "point_light_component.intensity": 30,
@@ -5169,7 +5169,7 @@
    "loc": [
     -6000,
     -60000,
-    2400
+    2520
    ],
    "props": {
     "point_light_component.intensity": 2000,

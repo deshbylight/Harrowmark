@@ -43,7 +43,5 @@ if section in lines:
     lines.insert(start, entry)
 else:
     lines += ["", section, entry]
-ini.write_text("
-".join(lines).strip() + "
-", encoding="utf-8")
+ini.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
 print(f"JF_CASE {path} <- {source.name} ({len(text)} chars)")

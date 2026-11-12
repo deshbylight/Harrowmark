@@ -55,6 +55,7 @@ void AHarrowGameMode::StartPlay()
 	if (!Inv->GetCase()->Hub.IsNone() && Inv->GetState().bAtHub != IsHubMap())
 	{
 		// Play started on the other map (an editor session): go where the case says the detective is.
+		bRedirect = true;
 		Travel();
 		return;
 	}
@@ -120,8 +121,11 @@ void AHarrowGameMode::Travel()
 		return;
 	}
 	const bool bAtHub = Inv->GetState().bAtHub;
-	const FName Tag = bAtHub ? (bDawnPending ? DawnTag : OfficeTag) : CarTag;
+	// A redirect into a case nobody has touched yet is the case start, not an arrival by car.
+	const bool bFresh = bRedirect && Inv->GetState().Taken.IsEmpty() && Inv->GetState().Hand.IsEmpty();
+	const FName Tag = bAtHub ? (bDawnPending ? DawnTag : OfficeTag) : (bFresh ? StartTag : CarTag);
 	bDawnPending = false;
+	bRedirect = false;
 	if (bAtHub == IsHubMap())
 	{
 		// Dawn while already at the office: no map change, cut to the darkroom.

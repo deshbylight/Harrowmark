@@ -52,5 +52,7 @@ private:
 	/** The arrival tag this map was opened with (travel option "Arrive"); none at the case start. */
 	FName Arrival;
 	bool bDawnPending = false;
+	/** Travel() was called because play started on the wrong map, not by a drive. */
+	bool bRedirect = false;
 	FTimerHandle TravelTimer;
 };

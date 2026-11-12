@@ -5,7 +5,28 @@
 #include "Engine/World.h"
 #include "InvestigationSettings.h"
 #include "Misc/Paths.h"
+#include "HAL/IConsoleManager.h"
 #include "PhotoSubjectComponent.h"
+
+#if !UE_BUILD_SHIPPING
+// Debug commands for test runs (jf shot --exec): the drive and the end of the night without walking there.
+static FAutoConsoleCommandWithWorld GDriveCommand(TEXT("hm.Drive"), TEXT("Drive between the scene and the agency office."),
+	FConsoleCommandWithWorldDelegate::CreateLambda([](UWorld* World)
+	{
+		if (UInvestigationSubsystem* Inv = UInvestigationSubsystem::Get(World))
+		{
+			Inv->Drive();
+		}
+	}));
+static FAutoConsoleCommandWithWorld GEndNightCommand(TEXT("hm.EndNight"), TEXT("End the night now (dawn, or the forced report on the last night)."),
+	FConsoleCommandWithWorldDelegate::CreateLambda([](UWorld* World)
+	{
+		if (UInvestigationSubsystem* Inv = UInvestigationSubsystem::Get(World))
+		{
+			Inv->EndNight();
+		}
+	}));
+#endif
 
 void UInvestigationSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
