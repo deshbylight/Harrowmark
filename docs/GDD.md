@@ -77,7 +77,7 @@ Everything visual or audio beyond that is Should (section 12).
 | Criterion | What earns it |
 |---|---|
 | Ambition and innovation | Photography as the only way to keep evidence; darkroom enlargement as a second pass on the same photo; a theory board that can break itself; the client as a suspect |
-| Theme | No theme for this jam (owner confirmed); the criterion is covered by the strength of the core idea |
+| Theme | **Director's Cut** (do what you have never done before). Three readings, all visible in play: the player directs the evidence (12 plates; only what you frame exists); the narrator's story is the theatrical cut and the player's photos assemble the director's cut, with the missing hour restored in the closing reconstruction; and a detective game whose only tool is film, which none of us has made before |
 | Fun | Aha moments: the loupe resolving a name, the LIE stamp, the snap of a broken theory, the envelope choice |
 | Gameplay | Clear verbs (look, shoot, talk, pin, tie, enlarge, report), two currencies (time, film), five endings |
 | Visuals (and the NVIDIA prize) | Night port in rain: Lumen hardware ray tracing, the flash lighting wet surfaces and rain in one frame, the red-lit darkroom; DLSS with frame generation; path-traced promo stills. Headline NvRTX feature (confirmed day 1, 2026-11-12): **RTXDI** (NvRTX Sampled Lighting Direct, `r.SampledLighting.Direct`) for every shadowed practical light, denoised by **DLSS Ray Reconstruction**. Measured on /Game/Dev/L_RTXDITest (36 shadowed point lights, 1280x720 DLAA, RTX 5070 Ti, fixed camera): RTXDI on 6.3 ms GPU, p95 8.0 ms, no hitches; off (ray-traced/virtual shadow maps) 5.9 ms GPU, p95 11.7 ms, 16 hitches over 50 ms; on gives soft area-light penumbrae, off gives hard shadows. RTX Mega Geometry and Audio2Face are not claimed (untested) |
@@ -409,7 +409,7 @@ the mirror, the reconstruction.
 
 ## 15. Open questions for the owner
 
-1. Jam theme: none (owner confirmed). Resolved.
+1. Jam theme: **Director's Cut** (owner, 2026-11-12): an open prompt to make something never done before. Mapped in section 5. Resolved.
 2. Detective: male (decided), name still open.
 3. Game title: **HarrowMark** (owner, 2026-11-12), after the port city. In-world text spells the city "Harrowmark"; the title logo keeps the capital M. Retired: "Night Exposure", "Exposure", and "HarrowMouth" (already used in other detective fiction). A web check on 2026-11-12 found only one fan-made "Harrowmark Company" in a fantasy setting.
 4. SpaceXSI: credits for Grok and Cursor (coding assistants, not an asset source). Resolved.

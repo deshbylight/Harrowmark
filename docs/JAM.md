@@ -13,6 +13,12 @@ section numbers below, written as "OR 7(c)", refer to it.
 | Jam start (game work may begin) | 2026-11-11 21:00 | 2026-11-12 00:00 | 2026-11-12 05:00 |
 | Submission deadline (late = disqualified) | 2026-11-15 17:59 | 2026-11-15 20:59 | 2026-11-16 01:59 |
 
+## Theme
+
+**Director's Cut** (revealed 2026-11-11 19:00 UTC; the owner confirmed it). It is an open prompt: make
+something you have never done before. Theme is a judging criterion, so the game must show it in play,
+not only in the page text. How HarrowMark reads it: `docs/GDD.md` section 5.
+
 ## What may exist before the start
 
 - Allowed: tools, agents, MCP servers, scripts, prompts, pipelines, reusable frameworks and assets.

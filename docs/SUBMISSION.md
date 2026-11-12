@@ -7,7 +7,10 @@ and the jam submission form. Rules: `docs/JAM.md`.
 
 - Name: (jam.toml `[jam] game_name`)
 - Team: (jam.toml `[jam] team_name`); member names and Epic account emails are entered by the owner.
-- Theme interpretation: (one paragraph)
+- Theme interpretation (draft, no spoilers): Director's Cut. You hold the only camera. Twelve plates a
+  night, and nothing counts as evidence unless you framed it. The narrator gives you his version of the
+  night; your photographs cut a different one, and the last reel restores what his version left out.
+  We had never made a detective game, nor one where the camera is the only way to remember.
 - Pitch: (two sentences)
 
 ## How to play
