@@ -40,7 +40,7 @@ share = 0.28
 
 [jam]
 # Submission zip name TeamName_GameName (letters, digits, '-'); `jf package --zip` refuses while empty.
-team_name = ""
+team_name = "Defairsh"
 game_name = "HarrowMark"
 
 [media]
